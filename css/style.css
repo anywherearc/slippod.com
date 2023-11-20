@@ -1,0 +1,81 @@
+html {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+body {
+    background-color: #FEF4F0;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 256px;
+}
+
+#pageHeader {
+    text-align: center;
+}
+
+#pageHeader h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #2B2625;
+}
+
+#pageHeader p {
+    font-size: 1.5rem;
+    color: #64534E;
+}
+
+#downloadLink {
+    text-align: center;
+}
+
+.downloadLinkContainer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.platforminfo h2 {
+    margin: 0;
+    color: #2B2625;
+    margin-bottom: 1rem;
+}
+
+.downloadButton > * {
+    display: inline-block;
+}
+
+.downloadButton > a {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #DF5F38;
+    border-radius: 0.5rem;
+}
+
+.downloadButton > a:hover {
+    background-color: #C64922;
+}
+
+@media only screen and (max-width: 512px) {
+    #hero img {
+        width: 256px;
+    }
+    #pageHeader h1 {
+        font-size: 3rem;
+        margin: 0;
+        color: #2B2625;
+    }
+    
+    #pageHeader p {
+        font-size: 1rem;
+        color: #64534E;
+    }
+}

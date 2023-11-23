@@ -1,0 +1,24 @@
+{
+  "name": "slippod-product-site",
+  "version": "0.0.1",
+  "description": "Slippod Product Site",
+  "main": "index.html",
+  "scripts": {
+    "tailwind:watch": "npx tailwindcss -i ./src/css/src.css -o ./src/css/dist.css --watch",
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anywherearc/slippod.github.io.git"
+  },
+  "author": "ANYWHERE ARC LTD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anywherearc/slippod.github.io/issues"
+  },
+  "homepage": "https://github.com/anywherearc/slippod.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

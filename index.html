@@ -3,45 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Slippod</title>
-    <meta name="description" content="All our apps are free to try for 14 days">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Slippod</title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
     <link rel="stylesheet" href="./src/css/dist.css">
 </head>
 <body>
-    <div id="hero">
-        <img src="./src/img/appicon.png" alt="Slippod App Icon">
-    </div>
-    <div id="pageHeader">
-        <h1>Download Slippod</h1>
-        <p class="desc">All our apps are free to try for 14 days</p>
-    </div>
-    <div id="downloadLink">
-        <div class="downloadLinkContainer">
-            <div class="platforminfo">
-                <h2 class="os">macOS</h2>
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href="/"><img src="./src/img/slippod-logo.png" alt="Slippod Logo"></a>
             </div>
-            <div class="downloadButton">
-                <span class="icon icon-download"></span><a href="https://download.slippod.com/slippod.dmg">Download</a>
+            <div class="link">
+                <a class="pricing" href="/pricing">Pricing</a><a class="download" href="/download">Try it free</a>
             </div>
         </div>
-        <div class="downloadLinkContainer">
-            <div class="platforminfo">
-                <h2 class="os">Windows</h2>
-            </div>
-            <div class="downloadButton">
-                <span class="icon icon-download"></span><a href="https://download.slippod.com/slippod.exe">Download</a>
-            </div>
+    </header>
+    <div class="content">
+        <div class="pageHero">
+            <h2>Download</h2>
+            <p>All our apps are free to try for 14 days</p>
         </div>
-        <div class="downloadLinkContainer">
-            <div class="platforminfo">
-                <h2 class="os">Linux</h2>
-            </div>
-            <div class="downloadButton">
-                <span class="icon icon-download"></span><a href="https://download.slippod.com/slippod.AppImage">Download</a>
+        <div id="downloadPageBody" class="pageBody">
+            <div id="downloadLink">
+                <div class="downloadLinkContainer">
+                    <div class="platforminfo">
+                        <h2 class="os">macOS</h2>
+                    </div>
+                    <a href="https://download.slippod.com/xxx.dmg" class="downloadButton">
+                        <span class="icon icon-download"></span><span class="label">Universal (Apple Silicon and Intel)</span>
+                    </a>
+                </div>
+                <div class="downloadLinkContainer">
+                    <div class="platforminfo">
+                        <h2 class="os">Windows</h2>
+                    </div>
+                    <a href="https://download.slippod.com/xxx.dmg" class="downloadButton">
+                        <span class="icon icon-download"></span><span class="label">Standard (64-bit)</span>
+                    </a>
+                </div>
+                <div class="downloadLinkContainer">
+                    <div class="platforminfo">
+                        <h2 class="os">Linux</h2>
+                    </div>
+                    <a href="https://download.slippod.com/xxx.dmg" class="downloadButton">
+                        <span class="icon icon-download"></span><span class="label">AppImage</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="wrap">
+            <div class="madeby">
+                <p>Slippod is designed, built, and backed by Anywhere Arc.</p>
+            </div>
+            <div class="link">
+                <a class="linkPrivacy" href="/privacy">Privacy police</a><a class="linkX" href="/">@slippodapp</a><a mailto="support@slippod.com">support@slippod.com</a>
+            </div>
+        </div>
+    </footer>
     <script defer data-domain="slippod.com" src="https://plausible.io/js/script.js"></script>
     <script src="./src/js/main.js"></script>
 </body>

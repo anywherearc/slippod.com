@@ -2,84 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --sunlight-100: #541D0C;
+        --sunlight-200: #722B16;
+        --sunlight-300: #9F391A;
+        --sunlight-400: #C64922;
+        --sunlight-500: #DF5F38;
+        --sunlight-600: #EA7855;
+        --sunlight-700: #F69B7F;
+        --sunlight-800: #FCD1C4;
+        --sunlight-900: #FEF4F0;
+        --sunlight-gray-100: #2B2625;
+        --sunlight-gray-200: #473C39;
+        --sunlight-gray-300: #64534E;
+        --sunlight-gray-400: #776864;
+        --sunlight-gray-500: #918886;
+        --sunlight-gray-600: #B6AAA7;
+        --sunlight-gray-700: #CEC8C7;
+        --sunlight-gray-800: #E5E2E1;
+        --sunlight-gray-900: #F3F2F2;
+    }
+}
+
 html {
-    font-size: 16px;
+    @apply text-base;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 body {
-    background-color: #FEF4F0;
+    background-color: var(--sunlight-900);
 }
 
-#hero {
-    text-align: center;
+header {
+    border-bottom: 1px dashed var(--sunlight-gray-700);
+    background-color: var(--sunlight-900);
 }
 
-#hero img {
-    width: 256px;
+header .wrap {
+    @apply mx-4 md:mx-12 lg:mx-24 flex justify-between items-center py-3;
 }
 
-#pageHeader {
-    text-align: center;
+footer {
+    @apply md:fixed bottom-0 left-0 w-full;
+    border-top: 1px dashed var(--sunlight-gray-700);
+    background-color: var(--sunlight-900);
 }
 
-#pageHeader h1 {
-    font-size: 4rem;
-    margin: 0;
-    color: #2B2625;
+footer .wrap {
+    @apply mx-4 md:mx-12 lg:mx-24 md:flex justify-between items-center py-6;
 }
 
-#pageHeader p {
-    font-size: 1.5rem;
-    color: #64534E;
+footer .madeby {
+    @apply text-center mb-2 md:text-left md:mb-0;
+    color: var(--sunlight-gray-500);
+}
+
+footer .link {
+    @apply text-center md:text-left;
+}
+
+footer .link a {
+    color: var(--sunlight-gray-500);
+}
+
+footer .link a:not(:last-child) {
+    @apply mr-6;
+}
+
+header .wrap .link a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--sunlight-gray-500);
+    line-height: 1rem;
+}
+
+header .wrap .link .download {
+    @apply py-3 px-4 ml-6 md:ml-8;
+    color: var(--white);
+    border-radius: 0.25rem;
+    background: var(--sunlight-600);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+header .wrap .link .download:hover {
+    background: var(--sunlight-500);
+}
+
+header .wrap .logo img {
+    height: 40px;
+}
+
+.content .pageHero {
+    @apply text-center;
+    margin-top: 4.26666667rem;
+}
+
+.content .pageHero h2 {
+    font-size: 3.73333333rem;
+    font-weight: 600;
+    line-height: 4.26666667rem;
+    color: var(--sunlight-gray-100);
+}
+
+.content .pageHero p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--sunlight-gray-500);
 }
 
 #downloadLink {
-    text-align: center;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    @apply w-full md:w-[640px] mb-16 mt-16 md:mb-0;
 }
 
-.downloadLinkContainer {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+#downloadLink h2 {
+    @apply mb-4 md:mb-0;
+    font-size: 1.33333333rem;
+    color: var(--sunlight-gray-200);
+    font-weight: 500;
 }
 
-.platforminfo h2 {
-    margin: 0;
-    color: #2B2625;
-    margin-bottom: 1rem;
+#downloadLink .downloadLinkContainer {
+    @apply md:flex justify-between items-center py-8 px-12 text-center md:text-left;
+    line-height: 1rem;
 }
 
-.downloadButton > * {
+#downloadLink .downloadLinkContainer:not(:last-child) {
+    border-bottom: 1px solid var(--sunlight-gray-800);
+}
+
+#downloadLink .downloadLinkContainer .downloadButton {
+    @apply w-[300px] text-center py-3;
     display: inline-block;
+    color: var(--white);
+    background-color: var(--sunlight-600);
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
 }
 
-.downloadButton > a {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    color: #FFFFFF;
-    text-decoration: none;
-    background-color: #DF5F38;
-    border-radius: 0.5rem;
+#downloadLink .downloadLinkContainer .downloadButton:hover {
+    background-color: var(--sunlight-500);
 }
 
-.downloadButton > a:hover {
-    background-color: #C64922;
+.icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    mask-size: contain;
+    mask-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 512px) {
-    #hero img {
-        width: 256px;
-    }
-    #pageHeader h1 {
-        font-size: 3rem;
-        margin: 0;
-        color: #2B2625;
-    }
-    
-    #pageHeader p {
-        font-size: 1rem;
-        color: #64534E;
-    }
+.icon-download {
+    mask: url("../img/icon/download.svg");
+    width: 17.5px;
+    height: 15.21px;
+    background-color: var(--white);
+    @apply mr-2;
 }
+

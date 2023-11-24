@@ -1,3 +1,4 @@
+@import "./github-markdown-light.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,7 +108,7 @@ header .wrap .logo img {
 }
 
 .content .pageHero h2 {
-    @apply mx-2 md:mx-0;
+    @apply mx-2 md:mx-0 md:w-[820px] md:mx-auto;
     font-size: 3.73333333rem;
     font-weight: 600;
     line-height: 4.26666667rem;
@@ -115,6 +116,7 @@ header .wrap .logo img {
 }
 
 .content .pageHero p {
+    @apply mx-2 md:mx-0 md:w-[720px] md:mx-auto;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
@@ -328,4 +330,67 @@ header .wrap .logo img {
 .faqItem .faqAnswer {
     line-height: 1.5rem;
     color: var(--sunlight-gray-300);
+}
+
+/* Home Style */
+
+#founderNotes {
+    @apply mb-16;
+}
+
+#founderNotesContainer {
+    @apply relative w-[88%] md:w-[820px] mx-auto;
+}
+
+.paper {
+    @apply p-10;
+    border-radius: 0.25rem;
+    background: var(--white);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.paper .notesTitle {
+    @apply text-center mb-6;
+    font-weight: 600;
+    color: var(--sunlight-gray-500);
+}
+
+.paper .notesContent {
+    @apply mb-12;
+}
+
+.paper .notesCTA .tryBtn,
+.paper .notesCTA .purchaseBtn {
+    @apply py-3 px-4;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 0.25rem;
+    background: var(--sunlight-600);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.paper .notesCTA .tryBtn:hover {
+    background: var(--sunlight-500);
+}
+
+.paper .notesCTA .purchaseBtn {
+    @apply ml-4;
+    background-color: var(--white);
+    color: var(--sunlight-gray-200);
+}
+
+.paper .notesCTA .purchaseBtn:hover {
+    background-color: var(--sunlight-gray-900);
+}
+
+#paper1 {
+    transform: rotate(-3deg);
+}
+
+#paper1 .notesBody {
+    @apply invisible;
+}
+
+#paper2 {
+    @apply absolute top-0 left-0;
 }

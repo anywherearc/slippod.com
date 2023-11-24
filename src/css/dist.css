@@ -595,6 +595,10 @@ video {
   visibility: visible;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -615,6 +619,11 @@ video {
   left: 0px;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -625,6 +634,11 @@ video {
   margin-right: 4rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
@@ -633,6 +647,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-16 {
@@ -647,8 +666,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mt-16 {
@@ -679,6 +706,10 @@ video {
   width: 300px;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -695,8 +726,16 @@ video {
   resize: both;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -705,6 +744,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-12 {
@@ -758,6 +801,8 @@ video {
   outline-style: solid;
 }
 
+/* Common style */
+
 html {
   font-size: 0.93333333rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -797,20 +842,20 @@ header .wrap {
 }
 
 footer {
+  border-top: 1px dashed var(--sunlight-gray-700);
+  background-color: var(--sunlight-900);
+}
+
+.fixed-bottom {
   bottom: 0px;
   left: 0px;
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  footer {
+  .fixed-bottom {
     position: fixed;
   }
-}
-
-footer {
-  border-top: 1px dashed var(--sunlight-gray-700);
-  background-color: var(--sunlight-900);
 }
 
 footer .wrap {
@@ -908,8 +953,21 @@ header .wrap .logo img {
 }
 
 .content .pageHero {
+  margin-bottom: 4rem;
   text-align: center;
   margin-top: 4.26666667rem;
+}
+
+.content .pageHero h2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .content .pageHero h2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .content .pageHero h2 {
@@ -926,19 +984,28 @@ header .wrap .logo img {
   color: var(--sunlight-gray-500);
 }
 
+.pageBody {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .pageBody {
+    margin-bottom: 0px;
+  }
+}
+
+/* Download page */
+
 #downloadLink {
   background-color: var(--white);
   margin: 0 auto;
   border-radius: 0.25rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-  margin-bottom: 4rem;
-  margin-top: 4rem;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   #downloadLink {
-    margin-bottom: 0px;
     width: 640px;
   }
 }
@@ -1018,6 +1085,218 @@ header .wrap .logo img {
   margin-right: 0.5rem;
 }
 
+/* Pricing page */
+
+#purchaseOptions {
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  #purchaseOptions {
+    display: flex;
+  }
+}
+
+#purchaseOptions {
+  border-bottom: 1px dashed var(--sunlight-gray-700);
+}
+
+.purchaseOptionsContainer {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .purchaseOptionsContainer {
+    width: 408px;
+  }
+}
+
+.purchaseOptionsContainer {
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.purchaseOptionsContainer:first-child {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .purchaseOptionsContainer:first-child {
+    margin-right: 1.5rem;
+    margin-bottom: 0px;
+  }
+}
+
+.purchaseOptionsContainer .optionName {
+  margin-bottom: 1.5rem;
+}
+
+.purchaseOptionsContainer .optionName h3 {
+  font-size: 1.13333333rem;
+  font-weight: 500;
+  color: var(--sunlight-gray-200);
+}
+
+.purchaseOptionsContainer .optionPricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--sunlight-900);
+  border-radius: 0.25rem;
+}
+
+.purchaseOptionsContainer .optionPricing > div {
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.purchaseOptionsContainer .optionPricing > div.selected {
+  outline: 3px solid var(--sunlight-600);
+  border-radius: 0.25rem;
+}
+
+.purchaseOptionsContainer .optionPricing .payLifeTime {
+  width: 100%;
+  text-align: center;
+}
+
+.purchaseOptionsContainer .optionPricing .amount {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.purchaseOptionsContainer .optionPricing .period {
+  color: var(--sunlight-gray-200);
+}
+
+.purchaseOptionsContainer .optionPricing .priceLabel {
+  color: var(--sunlight-gray-600);
+}
+
+.purchaseOptionsContainer .optionIncluded {
+  padding: 1.5rem;
+}
+
+.purchaseOptionsContainer .optionIncluded li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.purchaseOptionsContainer:nth-child(2) .optionIncluded li:last-child {
+  visibility: hidden;
+}
+
+.purchaseOptionsContainer .optionIncluded .feature {
+  line-height: 1rem;
+  color: var(--sunlight-gray-200);
+  font-weight: 500;
+}
+
+.purchaseOptionsContainer .optionIncluded .icon-yes {
+  -webkit-mask: url("../img/icon/yes.svg");
+          mask: url("../img/icon/yes.svg");
+  width: 18px;
+  height: 17.98px;
+  background-color: var(--sunlight-gray-200);
+  margin-right: 0.5rem;
+}
+
+.purchaseOptionsContainer .optionPurchase {
+  text-align: center;
+}
+
+.purchaseOptionsContainer .optionPurchase .btn {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--sunlight-600);
+  color: var(--white);
+  font-weight: 500;
+  border-radius: 0.25rem;
+  line-height: 1rem;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.purchaseOptionsContainer .optionPurchase .btn:hover {
+  width: 100%;
+  background-color: var(--sunlight-500);
+}
+
+.sectionHeader {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.sectionHeader h3 {
+  font-size: 2.66666667rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: var(--sunlight-gray-100);
+}
+
+.sectionHeader p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .sectionHeader p {
+    width: 480px;
+  }
+}
+
+.sectionHeader p {
+  font-size: 1.13333333rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: var(--sunlight-gray-500);
+}
+
+#faq {
+  margin-bottom: 4rem;
+}
+
+#faqContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #faqContainer {
+    width: 656px;
+  }
+}
+
+#faqContainer {
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 2rem;
+}
+
+.faqItem .faqQuestion {
+  margin-bottom: 0.5rem;
+  font-size: 1.26666667rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--sunlight-gray-100);
+}
+
+.faqItem .faqAnswer {
+  line-height: 1.5rem;
+  color: var(--sunlight-gray-300);
+}
+
 @media (min-width: 768px) {
   .md\:fixed {
     position: fixed;
@@ -1028,12 +1307,28 @@ header .wrap .logo img {
     margin-right: 3rem;
   }
 
+  .md\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:w-\[408px\] {
+    width: 408px;
+  }
+
+  .md\:w-\[480px\] {
+    width: 480px;
+  }
+
   .md\:w-\[640px\] {
     width: 640px;
+  }
+
+  .md\:w-\[656px\] {
+    width: 656px;
   }
 
   .md\:text-left {
@@ -1047,4 +1342,3 @@ header .wrap .logo img {
     margin-right: 6rem;
   }
 }
-

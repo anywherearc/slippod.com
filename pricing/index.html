@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
     <link rel="stylesheet" href="/src/css/dist.css">
 </head>
-<body>
+<body data-page="pricing">
     <header>
         <div class="wrap">
             <div class="logo">
@@ -25,19 +25,19 @@
             <p>All our license types offer unlimited access to our apps</p>
         </div>
         <div id="pricingPageBody" class="pageBody">
-            <div id="purchaseOptions">
-                <div class="purchaseOptionsContainer">
+            <div id="purchasePlan">
+                <div class="purchasePlanContainer proPlan">
                     <div class="optionName">
                         <h3>Pro</h3>
                     </div>
-                    <div class="optionPricing">
-                        <div class="payPerMonth">
+                    <div class="pricingOption">
+                        <div class="payPerMonth option" data-option="monthly">
                             <div class="pricingInfo">
                                 <span class="amount">$2</span><span class="period"> / month</span>
                             </div>
                             <div class="priceLabel">$24 / year</div>
                         </div>
-                        <div class="payPerYear selected">
+                        <div class="payPerYear option selected" data-option="yearly">
                             <div class="pricingInfo">
                                 <span class="amount">$19</span><span class="period"> / year</span>
                             </div>
@@ -52,16 +52,17 @@
                             <li><span class="icon icon-yes"></span><span class="feature">Save 20% paid annually</span></li>
                         </ul>
                     </div>
-                    <div class="optionPurchase">
-                        <button class="btn">Buy now</button>
+                    <div class="planPurchase proPlanPurchase" data-option="yearly">
+                        <a href="https://store.slippod.com/checkout/buy/b2e0cc1f-647c-4963-b22d-1b88020d9c7b?embed=1&logo=0&desc=0" class="lemonsqueezy-button btn monthly">Pay per month</a>
+                        <a href="https://store.slippod.com/checkout/buy/7f64600f-e2bf-4f7e-a1ed-1496b933f92b?embed=1&logo=0&desc=0" class="lemonsqueezy-button btn yearly">Pay per year</a>
                     </div>
                 </div>
-                <div class="purchaseOptionsContainer">
+                <div class="purchasePlanContainer lifetimePlan">
                     <div class="optionName">
                         <h3>Mega Supporter</h3>
                     </div>
-                    <div class="optionPricing">
-                        <div class="payLifeTime">
+                    <div class="pricingOption">
+                        <div class="payLifeTime option">
                             <div class="pricingInfo">
                                 <span class="amount">$95</span>
                             </div>
@@ -76,8 +77,8 @@
                             <li><span class="icon icon-yes"></span><span class="feature"></span></li>
                         </ul>
                     </div>
-                    <div class="optionPurchase">
-                        <button class="btn">Become a supporter</button>
+                    <div class="planPurchase lifetimePlanPurchase">
+                        <a href="https://store.slippod.com/checkout/buy/6164ae30-c0d7-4990-b2cb-67d547225413?embed=1&logo=0&desc=0" class="lemonsqueezy-button btn">Become a Mega Supporter</a>
                     </div>
                 </div>
             </div>
@@ -128,6 +129,7 @@
         </div>
     </footer>
     <!-- <script defer data-domain="slippod.com" src="https://plausible.io/js/script.js"></script> -->
+    <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
     <script src="/src/js/main.js"></script>
 </body>
 </html>

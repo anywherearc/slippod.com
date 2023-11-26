@@ -183,84 +183,85 @@ header .wrap .logo img {
 
 /* Pricing page */
 
-#purchaseOptions {
+#purchasePlan {
     @apply md:flex items-start justify-center pb-16;
     border-bottom: 1px dashed var(--sunlight-gray-700);
 }
 
-.purchaseOptionsContainer {
+.purchasePlanContainer {
     @apply p-6 md:w-[408px];
     background-color: var(--white);
     border-radius: 0.25rem;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
 }
 
-.purchaseOptionsContainer:first-child {
+.purchasePlanContainer:first-child {
     @apply mb-6 md:mr-6 md:mb-0;
 }
 
-.purchaseOptionsContainer .optionName {
+.purchasePlanContainer .optionName {
     @apply mb-6;
 }
 
-.purchaseOptionsContainer .optionName h3 {
+.purchasePlanContainer .optionName h3 {
     font-size: 1.13333333rem;
     font-weight: 500;
     color: var(--sunlight-gray-200);
 }
 
-.purchaseOptionsContainer .optionPricing {
+.purchasePlanContainer .pricingOption {
     @apply flex justify-between items-center;
     background-color: var(--sunlight-900);
     border-radius: 0.25rem;
 }
 
-.purchaseOptionsContainer .optionPricing > div {
+.purchasePlanContainer .pricingOption .option {
     @apply w-[50%] text-center py-4 px-8;
+    cursor: pointer;
 }
 
-.purchaseOptionsContainer .optionPricing > div.selected {
+.purchasePlanContainer .pricingOption > div.selected {
     outline: 3px solid var(--sunlight-600);
     border-radius: 0.25rem;
 }
 
-.purchaseOptionsContainer .optionPricing .payLifeTime {
+.purchasePlanContainer .pricingOption .payLifeTime {
     @apply w-full text-center;
 }
 
-.purchaseOptionsContainer .optionPricing .amount {
+.purchasePlanContainer .pricingOption .amount {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.purchaseOptionsContainer .optionPricing .period {
+.purchasePlanContainer .pricingOption .period {
     color: var(--sunlight-gray-200);
 }
 
-.purchaseOptionsContainer .optionPricing .priceLabel {
+.purchasePlanContainer .pricingOption .priceLabel {
     color: var(--sunlight-gray-600);
 }
 
 
-.purchaseOptionsContainer .optionIncluded {
+.purchasePlanContainer .optionIncluded {
     @apply p-6;
 }
 
-.purchaseOptionsContainer .optionIncluded li:not(:last-child) {
+.purchasePlanContainer .optionIncluded li:not(:last-child) {
     @apply mb-4;
 }
 
-.purchaseOptionsContainer:nth-child(2) .optionIncluded li:last-child {
+.purchasePlanContainer:nth-child(2) .optionIncluded li:last-child {
     @apply invisible;
 }
 
-.purchaseOptionsContainer .optionIncluded .feature {
+.purchasePlanContainer .optionIncluded .feature {
     line-height: 1rem;
     color: var(--sunlight-gray-200);
     font-weight: 500;
 }
 
-.purchaseOptionsContainer .optionIncluded .icon-yes {
+.purchasePlanContainer .optionIncluded .icon-yes {
     mask: url("../img/icon/yes.svg");
     width: 18px;
     height: 17.98px;
@@ -268,12 +269,13 @@ header .wrap .logo img {
     @apply mr-2;
 }
 
-.purchaseOptionsContainer .optionPurchase {
+.purchasePlanContainer .planPurchase {
     @apply text-center;
 }
 
-.purchaseOptionsContainer .optionPurchase .btn {
+.purchasePlanContainer .planPurchase .btn {
     @apply w-full py-3 px-4;
+    display: inline-block;
     background-color: var(--sunlight-600);
     color: var(--white);
     font-weight: 500;
@@ -282,7 +284,15 @@ header .wrap .logo img {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
 }
 
-.purchaseOptionsContainer .optionPurchase .btn:hover {
+.purchasePlanContainer .planPurchase[data-option="monthly"] .yearly {
+    @apply hidden;
+}
+
+.purchasePlanContainer .planPurchase[data-option="yearly"] .monthly {
+    @apply hidden;
+}
+
+.purchasePlanContainer .planPurchase .btn:hover {
     @apply w-full;
     background-color: var(--sunlight-500);
 }

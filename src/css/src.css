@@ -199,11 +199,11 @@ header .wrap .logo img {
     @apply mb-6 md:mr-6 md:mb-0;
 }
 
-.purchasePlanContainer .optionName {
+.purchasePlanContainer .planName {
     @apply mb-6;
 }
 
-.purchasePlanContainer .optionName h3 {
+.purchasePlanContainer .planName h3 {
     font-size: 1.13333333rem;
     font-weight: 500;
     color: var(--sunlight-gray-200);
@@ -243,25 +243,25 @@ header .wrap .logo img {
 }
 
 
-.purchasePlanContainer .optionIncluded {
+.purchasePlanContainer .planIncluded {
     @apply p-6;
 }
 
-.purchasePlanContainer .optionIncluded li:not(:last-child) {
+.purchasePlanContainer .planIncluded li:not(:last-child) {
     @apply mb-4;
 }
 
-.purchasePlanContainer:nth-child(2) .optionIncluded li:last-child {
+.purchasePlanContainer:nth-child(2) .planIncluded li:last-child {
     @apply invisible;
 }
 
-.purchasePlanContainer .optionIncluded .feature {
+.purchasePlanContainer .planIncluded .feature {
     line-height: 1rem;
     color: var(--sunlight-gray-200);
     font-weight: 500;
 }
 
-.purchasePlanContainer .optionIncluded .icon-yes {
+.purchasePlanContainer .planIncluded .icon-yes {
     mask: url("../img/icon/yes.svg");
     width: 18px;
     height: 17.98px;

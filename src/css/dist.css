@@ -3885,11 +3885,11 @@ header .wrap .logo img {
   }
 }
 
-.purchasePlanContainer .optionName {
+.purchasePlanContainer .planName {
   margin-bottom: 1.5rem;
 }
 
-.purchasePlanContainer .optionName h3 {
+.purchasePlanContainer .planName h3 {
   font-size: 1.13333333rem;
   font-weight: 500;
   color: var(--sunlight-gray-200);
@@ -3936,25 +3936,25 @@ header .wrap .logo img {
   color: var(--sunlight-gray-600);
 }
 
-.purchasePlanContainer .optionIncluded {
+.purchasePlanContainer .planIncluded {
   padding: 1.5rem;
 }
 
-.purchasePlanContainer .optionIncluded li:not(:last-child) {
+.purchasePlanContainer .planIncluded li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.purchasePlanContainer:nth-child(2) .optionIncluded li:last-child {
+.purchasePlanContainer:nth-child(2) .planIncluded li:last-child {
   visibility: hidden;
 }
 
-.purchasePlanContainer .optionIncluded .feature {
+.purchasePlanContainer .planIncluded .feature {
   line-height: 1rem;
   color: var(--sunlight-gray-200);
   font-weight: 500;
 }
 
-.purchasePlanContainer .optionIncluded .icon-yes {
+.purchasePlanContainer .planIncluded .icon-yes {
   -webkit-mask: url("../img/icon/yes.svg");
           mask: url("../img/icon/yes.svg");
   width: 18px;

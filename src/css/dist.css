@@ -3054,9 +3054,24 @@ video {
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2 {
@@ -3593,6 +3608,13 @@ footer {
   .fixed-bottom {
     position: fixed;
   }
+}
+
+.sm-fixed-bottom {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 footer .wrap {
@@ -4138,6 +4160,32 @@ header .wrap .logo img {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+.ctaContainer {
+  text-align: center;
+}
+
+.ctaContainer .cta {
+  margin-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+@media (min-width: 768px) {
+  .ctaContainer .cta {
+    margin-left: 2rem;
+  }
+}
+
+.ctaContainer .cta {
+  font-size: 1.53333333rem;
+  color: var(--white);
+  border-radius: 0.25rem;
+  background: var(--sunlight-600);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
 }
 
 @media (min-width: 640px) {

@@ -58,6 +58,10 @@ footer {
     @apply md:fixed bottom-0 left-0 w-full;
 }
 
+.sm-fixed-bottom {
+    @apply fixed bottom-0 left-0 w-full;
+}
+
 footer .wrap {
     @apply mx-4 md:mx-12 lg:mx-24 md:flex justify-between items-center py-6;
 }
@@ -403,4 +407,17 @@ header .wrap .logo img {
 
 #paper2 {
     @apply absolute top-0 left-0;
+}
+
+.ctaContainer {
+    @apply text-center;
+}
+
+.ctaContainer .cta {
+    @apply py-4 px-16 ml-6 md:ml-8;
+    font-size: 1.53333333rem;
+    color: var(--white);
+    border-radius: 0.25rem;
+    background: var(--sunlight-600);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
 }

@@ -414,9 +414,14 @@ header .wrap .logo img {
 
 .ctaContainer .cta {
     @apply py-4 px-16 ml-6 md:ml-8;
+    display: inline-block;
     font-size: 1.53333333rem;
     color: var(--white);
     border-radius: 0.25rem;
     background: var(--sunlight-600);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.ctaContainer .cta.download {
+    @apply mb-8 md:mb-0;
 }

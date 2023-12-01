@@ -189,7 +189,6 @@ header .wrap .logo img {
 
 #purchasePlan {
     @apply md:flex items-start justify-center pb-16;
-    border-bottom: 1px dashed var(--sunlight-gray-700);
 }
 
 .purchasePlanContainer {

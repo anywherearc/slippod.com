@@ -413,12 +413,11 @@ header .wrap .logo img {
 }
 
 .ctaContainer {
-    @apply text-center;
+    @apply text-center px-8 md:px-0;
 }
 
 .ctaContainer .cta {
-    @apply py-4 px-16 ml-6 md:ml-8;
-    display: inline-block;
+    @apply py-4 px-16 block md:inline-block;
     font-size: 1.53333333rem;
     color: var(--white);
     border-radius: 0.25rem;
@@ -427,5 +426,5 @@ header .wrap .logo img {
 }
 
 .ctaContainer .cta.download {
-    @apply mb-8 md:mb-0;
+    @apply mb-8 md:mb-0 md:mr-8;
 }

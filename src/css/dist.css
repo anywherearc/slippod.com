@@ -1843,6 +1843,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1863,8 +1867,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .mr-6 {
@@ -4153,11 +4165,20 @@ header .wrap .logo img {
 }
 
 .ctaContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .ctaContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .ctaContainer .cta {
-  margin-left: 1.5rem;
+  display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 4rem;
@@ -4166,12 +4187,11 @@ header .wrap .logo img {
 
 @media (min-width: 768px) {
   .ctaContainer .cta {
-    margin-left: 2rem;
+    display: inline-block;
   }
 }
 
 .ctaContainer .cta {
-  display: inline-block;
   font-size: 1.53333333rem;
   color: var(--white);
   border-radius: 0.25rem;
@@ -4186,6 +4206,7 @@ header .wrap .logo img {
 @media (min-width: 768px) {
   .ctaContainer .cta.download {
     margin-bottom: 0px;
+    margin-right: 2rem;
   }
 
   .md\:fixed {
@@ -4200,6 +4221,10 @@ header .wrap .logo img {
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:mr-6 {

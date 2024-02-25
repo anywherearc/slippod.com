@@ -1,0 +1,2 @@
+if("pricing"===document.querySelector("body").dataset.page){let e=document.querySelector(".proPlan").querySelectorAll(".option"),t=document.querySelector(".proPlanPurchase");e.forEach(o=>{o.addEventListener("click",()=>{e.forEach(e=>{e.classList.remove("selected")}),o.classList.add("selected"),"monthly"===o.dataset.option?t.dataset.option="monthly":t.dataset.option="yearly"})})}
+//# sourceMappingURL=index.67b64f69.js.map

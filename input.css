@@ -521,7 +521,7 @@ header .wrap .logo img {
 }
 
 #homeFeatures .wrap {
-    @apply grid grid-cols-3 gap-4 text-center;
+    @apply lg:grid lg:grid-cols-3 lg:gap-4 text-center;
 }
 
 #homeFeatures .wrap .benefitPoint {

@@ -1,0 +1,15 @@
+{
+  "name": "slippod-mkt-lp",
+  "version": "0.0.1",
+  "description": "Marketing landing page for Slippod app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./dist.css --watch"
+  },
+  "author": "Anywhere Arc",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

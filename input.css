@@ -525,7 +525,7 @@ header .wrap .logo img {
 }
 
 #homeFeatures .wrap .benefitPoint {
-    @apply py-6 px-12;
+    @apply m-6 py-6 px-12;
     color: var(--sunlight-gray-100);
     border-radius: 0.25rem;
     background-color: var(--sunlight-gray-900);

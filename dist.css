@@ -8600,6 +8600,10 @@ html:has(.drawer-open.drawer-open) {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -8674,10 +8678,6 @@ html:has(.drawer-open.drawer-open) {
 
 .mt-\[4rem\] {
   margin-top: 4rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .box-border {
@@ -8795,12 +8795,24 @@ html:has(.drawer-open.drawer-open) {
   min-height: 100%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
 .w-2 {
   width: 0.5rem;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[300px\] {
@@ -8821,22 +8833,6 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .max-w-screen-xl {
@@ -10282,6 +10278,11 @@ html:has(.drawer-open.drawer-open) {
   border-color: var(--fallback-suc,oklch(var(--suc)/var(--tw-border-opacity)));
 }
 
+.border-sunlight-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(182 170 167 / var(--tw-border-opacity));
+}
+
 .border-sunlight-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(206 200 199 / var(--tw-border-opacity));
@@ -10304,11 +10305,6 @@ html:has(.drawer-open.drawer-open) {
 .border-warning-content {
   --tw-border-opacity: 1;
   border-color: var(--fallback-wac,oklch(var(--wac)/var(--tw-border-opacity)));
-}
-
-.border-sunlight-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(182 170 167 / var(--tw-border-opacity));
 }
 
 .border-x-accent {
@@ -11960,6 +11956,16 @@ html:has(.drawer-open.drawer-open) {
   padding-right: 4rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -11973,6 +11979,16 @@ html:has(.drawer-open.drawer-open) {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -11998,26 +12014,6 @@ html:has(.drawer-open.drawer-open) {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pb-12 {
@@ -13539,14 +13535,6 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:w-\[720px\] {
     width: 720px;
-  }
-
-  .md\:place-self-center {
-    place-self: center;
-  }
-
-  .md\:justify-self-end {
-    justify-self: end;
   }
 
   .md\:px-0 {

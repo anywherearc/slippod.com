@@ -49,5 +49,6 @@ module.exports = {
   },
   plugins: [
     addDynamicIconSelectors(),
+    require('daisyui'),
   ],
 }

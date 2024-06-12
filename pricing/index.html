@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-sunlight-900 font-sans">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,13 @@
     <script type="module">function a() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], a("js", new Date), a("config", "G-6ZQ64DZ5MK");</script>
     <script type="module">window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) }, heap.load("257753800");</script>
 </head>
-<body data-page="pricing" class="text-base font-sans bg-sunlight-900">
+<body data-page="pricing" class="text-base">
     <header class="border-b border-dashed border-sunlight-gray-700 bg-sunlight-900">
         <div class="wrap mx-4 md:mx-12 lg:mx-24 flex justify-between items-center py-3">
             <div class="logo">
                 <a href="/"><img class="h-[40px]" src="/slippod-logo.d387f5fe.png" alt="Slippod Logo"></a>
             </div>
-            <div class="link font-semibold leading-none">
+            <div class="font-semibold leading-none">
                 <a class="pricing inline-block text-sunlight-gray-500" href="/pricing/">Pricing</a><a class="download inline-block text-white py-3 px-4 ml-6 md:ml-8 rounded-sm bg-sunlight-600 shadow-md hover:bg-sunlight-500" href="/download/">Download</a>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     <div class="planInfo text-center p-6 mb-6 rounded-md bg-sunlight-900">
                         <p>You can download and try Slippod for free. After 14 days, if you want to continue use it, send us <a class="text-sunlight-500 hover:border-b hover:border-dashed hover:border-sunlight-gray-700" href="mailto:support@slippod.com">an email</a> to request a license. We will gift one to you.</p>
                     </div>
-                    <div class="free planCta text-center"> <a href="https://slippod.com/download/" class="btn inline-block w-full py-3 px-4 bg-sunlight-600 text-white font-semibold rounded-sm leading-none shadow-md hover:bg-sunlight-500">Download</a> </div>
+                    <div class="free planCta text-center"> <a href="https://slippod.com/download/" class="inline-block w-full py-3 px-4 bg-sunlight-600 text-white font-semibold rounded-sm leading-none shadow-md hover:bg-sunlight-500">Download</a> </div>
                 </div>
                 <div class="supporter planCtn p-6 md:w-[408px] bg-white rounded-md shadow-md">
                     <div class="planName mb-6 text-center">
@@ -49,21 +49,32 @@
                         <p>For those who really like the app, want to support our development efforts and access to
                             experimental features, you can choose to purchase a license.</p>
                     </div>
-                    <div class="planCta supporter text-center"> <a href="https://buy.stripe.com/6oEg0zcPY0Nk50cfZ0" target="_blank" class="btn inline-block w-full py-3 px-4 bg-sunlight-600 text-white font-semibold rounded-sm leading-none shadow-md hover:bg-sunlight-500">Purchase for $8</a> </div>
+                    <div class="planCta supporter text-center"> <a href="https://buy.stripe.com/6oEg0zcPY0Nk50cfZ0" target="_blank" class="inline-block w-full py-3 px-4 bg-sunlight-600 text-white font-semibold rounded-sm leading-none shadow-md hover:bg-sunlight-500">Purchase for $8</a> </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="fixed bottom-0 right-0 left-0 w-full border-t border-dashed border-sunlight-gray-700 bg-sunlight-900">
-        <div class="wrap mx-4 md:mx-12 lg:mx-24 md:flex justify-between items-center py-4">
-            <div class="madeby text-center mb-2 md:text-left md:mb-0 text-sunlight-gray-500">
-                <p>Slippod is designed, built, and backed by <a href="https://www.anywherearc.com">Anywhere Arc</a>, which also made <a href="https://textpixie.com">TextPixie Translator: Free AI Translator Online</a>.</p>
-            </div>
-            <div class="link text-center md:text-left">
-                <a class="linkX text-sunlight-gray-500 mr-6" href="https://twitter.com/slippodapp">@slippodapp</a><a href="mailto:support@slippod.com" class="text-sunlight-gray-500">support@slippod.com</a>
-            </div>
+    <div id="footer" class="border-t border-dashed border-sunlight-gray-700 lg:px-24 py-8">
+        <div class="max-w-screen-xl mx-auto">
+            <footer class="footer bg-sunlight-900 px-8">
+                <aside>
+                    <div class="mb-2"><a href="https://www.anywherearc.com/"><img class="w-12 opacity-50 hover:opacity-100" src="/aa-logo.png" alt="Anywhere Arc Logo"></a></div>
+                    <p class="text-sunlight-gray-500 text-base">Slippod is designed, built, and backed by <a href="https://www.anywherearc.com">Anywhere Arc</a></p>
+                    <p class="text-sunlight-gray-500 text-base">Anywhere Arc also made <a href="https://textpixie.com">TextPixie Translator: A free Online AI Translator</a></p>
+                </aside> 
+                <nav>
+                    <h6 class="footer-title">Product</h6> 
+                    <a class="text-sunlight-gray-500 text-base" href="/pricing/">Pricing</a>
+                    <a class="text-sunlight-gray-500 text-base" href="/download/">Download</a>
+                </nav> 
+                <nav>
+                    <h6 class="footer-title">Contact</h6> 
+                    <a class="linkX text-sunlight-gray-500 text-base" href="https://twitter.com/slippodapp">Slippod on X</a>
+                    <a href="mailto:support@slippod.com" class="text-sunlight-gray-500 text-base">support@slippod.com</a>
+                </nav> 
+            </footer>
         </div>
-    </footer>
+    </div>
     <script defer data-domain="slippod.com" src="https://plausible.anywherearc.com/js/script.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ module.exports = {
   content: [
     "./index.html",
     "./**/*.{html,css,js}",
+    "!./node_modules/**/*"
   ],
   theme: {
     extend: {

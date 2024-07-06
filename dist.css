@@ -13146,11 +13146,6 @@ html:has(.drawer-open.drawer-open) {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
